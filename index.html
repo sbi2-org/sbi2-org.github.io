@@ -67,9 +67,9 @@
 
               <a class="button button-bluesky" href="https://drive.google.com/file/d/1WQ49QNq25ScnX7ce6-OybpNVh7q1D1Bf/view?usp=drive_link" rel="noreferrer noopener" role="button" target="_blank"><img class="icon" aria-hidden="true" src="images/icons/generic-blog.svg" alt="Blog Icon">Conference at a glance</a>
 
-              <a class="button button-mailchimp" href="https://www.jotform.com/form/261656868015162" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-review.svg" alt="Review Icon">Poster abstracts (due Oct 5)</a>
+              <a id="poster-abstracts" class="button button-mailchimp" href="https://www.jotform.com/form/261656868015162" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-review.svg" alt="Review Icon">Poster abstracts</a>
 
-              <a class="button button-amazon" href="https://www.jotform.com/form/260756270767163" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-shopping-tag.svg" alt="Tag Icon">Sponsor &amp; vendor registration</a>
+              <a class="button button-kit" href="https://www.jotform.com/form/260756270767163" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-shopping-bag.svg" alt="Bag Icon">Sponsor registration</a>
 
               <a class="button button-medium" href="https://sbi2.org/wp-content/uploads/2026/04/2026-SBI2-Prospectus.pdf" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-shopping-bag.svg" alt="Shopping Bag Icon">Sponsor prospectus (PDF)</a>
 
@@ -81,6 +81,18 @@
 
               
       </div>
+
+      <script>
+        // Hide the poster abstracts button after the submission deadline
+        // (Oct 5, 2026, end of day, conference local time: America/New_York).
+        (function () {
+          var deadline = new Date('2026-10-06T00:00:00-04:00'); // 00:00 EDT = Oct 5 23:59
+          var btn = document.getElementById('poster-abstracts');
+          if (btn && new Date() >= deadline) {
+            btn.remove();
+          }
+        })();
+      </script>
       <footer>
          Brought to you by <a href="https://sbi2.org" target="_blank" rel="noopener">SBI²</a>.
     </div>
