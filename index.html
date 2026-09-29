@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Page Title - Change this to your name/brand (50-60 characters recommended) -->
-    <title>SBI2 - Links</title>
+    <title>SBI2 2026 Boston Conference - Links</title>
     <link rel="icon" type="image/x-icon" href="/images/avatar.png"> <!-- Update this with your own favicon -->
 
     <!-- Meta Description - Write a description (150-160 characters recommended) -->
-    <meta name="description" content="Society of Biomolecular Imaging & Informatics (SBI²) links page.">
+    <meta name="description" content="Society of Biomolecular Imaging & Informatics (SBI²) 2026 Boston conference links page.">
 
     <!-- Keywords -->
     <meta name="keywords" content="biology, microscropy, imaging, informatics, research, industry, science">
@@ -51,42 +51,48 @@
 
             <!-- Replace with your name or brand -->
             <h1>
-              <div>SBI² 2025</div>
+              <div>SBI² 2026 Boston</div>
             </h1>
 
             <!-- Add a short description about yourself or your brand -->
-            <p>Welcome to SBI² 2025! Please use the links below to help navigate information about the conference.</p>
+            <p>Welcome to SBI² 2026! Join us November 2&ndash;4 at the Renaissance Boston Seaport District. Use the links below to navigate conference information.</p>
 
             <div class="button-stack" role="navigation">
 
+              <a class="button button-default" href="https://sbi2.org/2026-sbi2-conference-registration/" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-calendar.svg" alt="Calendar Icon">Attendee registration</a>
+
+              <a class="button button-gitlab" href="https://book.passkey.com/event/51149003/owner/52950/home" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-homepage.svg" alt="Homepage Icon">Discounted hotel booking</a>
+
               <a class="button button-fiverr" href="https://maps.app.goo.gl/UgzD5F2ddY68nkqu5" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-map.svg" alt="Map Icon">Venue directions</a>
 
-              <a class="button button-gitlab" href="https://heyzine.com/flip-book/238eaf6526.html" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-blog.svg" alt="Blog Icon">Program (Heyzine)</a>
+              <a class="button button-bluesky" href="https://drive.google.com/file/d/1WQ49QNq25ScnX7ce6-OybpNVh7q1D1Bf/view?usp=drive_link" rel="noreferrer noopener" role="button" target="_blank"><img class="icon" aria-hidden="true" src="images/icons/generic-blog.svg" alt="Blog Icon">Conference at a glance</a>
 
-              <a class="button button-bluesky" href="https://sbi2.org/wp-content/uploads/2025/10/SBI2-2025_Program_1025_compressed.pdf" rel="noreferrer noopener" role="button" target="_blank"><img class="icon" aria-hidden="true" src="images/icons/generic-blog.svg" alt="Website Icon">Program (PDF)</a>
+              <a id="poster-abstracts" class="button button-mailchimp" href="https://www.jotform.com/form/261656868015162" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-review.svg" alt="Review Icon">Poster abstracts</a>
 
-              <a class="button button-mailchimp" href="https://sbi2.org/conference/2025-posters/" target="_blank" rel="noopener" role="button"> ■ Poster abstracts</a>
+              <a class="button button-kit" href="https://www.jotform.com/form/260756270767163" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-shopping-tag.svg" alt="Tag Icon">Sponsor registration</a>
 
-              <a class="button button-reddit" href="https://sbi2.org/conference" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-website.svg" alt="Website Icon">Conference webpage</a>
+              <a class="button button-twitch" href="https://sbi2.org/wp-content/uploads/2026/04/2026-SBI2-Prospectus.pdf" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-blog.svg" alt="Document Icon">Prospectus (PDF)</a>
+
+              <a class="button button-reddit" href="https://sbi2.org/2026-sbi2-conference-boston/" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-website.svg" alt="Website Icon">Conference webpage</a>
 
               <a class="button button-vimeo" style="background: rgb(216, 94, 196)" href="https://sbi2.org/membership/register/" rel="noopener" role="button"><img class="icon" aria-hidden="true" alt="Heart Icon" src="images/icons/heart.svg">Register as a member</a>
 
-              <a class="button button-bluesky" href="https://docs.google.com/forms/d/e/1FAIpQLSejnu3lPXX63iTEYrVSX6wvUIjk3Zrvioej2ROCc2IU00y5uQ/viewform" rel="noreferrer noopener" role="button" target="_blank">✅ SBI2 board nominations</a>
-
               <a class="button button-linked" href="https://www.linkedin.com/company/society-of-biomolecular-imaging-and-informatics" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/linkedin.svg" alt="LinkedIn Logo">Follow us on LinkedIn</a>
-
-
-
-
-
-
-
-
-
-
 
               
       </div>
+
+      <script>
+        // Hide the poster abstracts button after the submission deadline
+        // (Oct 5, 2026, end of day, conference local time: America/New_York).
+        (function () {
+          var deadline = new Date('2026-10-06T00:00:00-04:00'); // 00:00 EDT = Oct 5 23:59
+          var btn = document.getElementById('poster-abstracts');
+          if (btn && new Date() >= deadline) {
+            btn.remove();
+          }
+        })();
+      </script>
       <footer>
          Brought to you by <a href="https://sbi2.org" target="_blank" rel="noopener">SBI²</a>.
     </div>
